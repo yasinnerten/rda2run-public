@@ -1,0 +1,103 @@
+{
+  "decoder": {
+    "alive_control": 1.0,
+    "carry_speed_mps": 8.0,
+    "carry_speed_softness_mps": 1.5,
+    "control_gain": 3.0,
+    "control_radius_m": 1.5,
+    "control_softness_m": 0.5,
+    "dead_base_logit": -1.0,
+    "dead_few_players": 2.0,
+    "dead_out_of_bounds": 3.0,
+    "dead_set_piece_tag": 1.0,
+    "dead_slow_players": 1.5,
+    "dead_still_ball": 0.75,
+    "evidence_temperature": 0.1,
+    "mean_dead_s": 20.0,
+    "mean_team_state_s": 12.0,
+    "min_players_for_play": 8,
+    "out_of_bounds_margin_m": 0.3,
+    "slow_players_mps": 0.8,
+    "slow_players_softness_mps": 0.25,
+    "speed_half_window": 5,
+    "still_ball_mps": 0.5,
+    "tag_phase_gain": 0.3,
+    "tag_set_piece_gain": 0.6,
+    "turnover_fraction": 0.5
+  },
+  "live_model": {
+    "bias": 0.4167464753851504,
+    "features": [
+      "log_ball_step",
+      "log_nearest_player",
+      "players",
+      "ball_observed",
+      "log_ball_step_window_mean",
+      "log_nearest_player_window_mean",
+      "players_window_mean",
+      "ball_observed_window_mean",
+      "log_ball_step_window_max"
+    ],
+    "mean": [
+      0.1424367387973748,
+      1.3338461670232642,
+      21.9067602759009,
+      0.8000070382882883,
+      0.1424633927987903,
+      1.3338532223451074,
+      21.90675851632883,
+      0.800002787401062,
+      0.3448681632348764
+    ],
+    "scale": [
+      0.1857239608250124,
+      0.71942746735305,
+      0.2907680827550077,
+      0.3999947211870296,
+      0.14432048469370698,
+      0.6301073024599138,
+      0.29073272717949933,
+      0.2521717960828244,
+      0.47957549196151744
+    ],
+    "threshold": 0.5,
+    "weights": [
+      1.352742099168383,
+      -0.5975727240505391,
+      0.060327376218508616,
+      0.006509784625265024,
+      2.0894389511930402,
+      -1.0943951432553611,
+      0.06034040944173946,
+      -0.01081032380250965,
+      0.1077876541858419
+    ]
+  },
+  "source_sha256": {
+    "J03WOH.csv": "30088b79bbc588891cc6fce463f4ea0591675e360ca1c1c37f626bce9935dee1",
+    "J03WOY.csv": "7aaab48d03ad8da7712b31b17be8e0bad26c1562ba9eba58d4e420deeea2dca5",
+    "J03WPY.csv": "ff4e568a97226202ebb0c04d5daec19eb2cfcc35a534764b712cf5c59344b2e5",
+    "J03WQQ.csv": "ae5c716b58f9c62d5ad467c77e0bf868f0cd165389d75603a0c4d7ed2a569901",
+    "model.json": "be54566b0c1ab99609f9fc9cb33c12db06fbbfd9023b50fab82a6f68a49da3cd"
+  },
+  "team_model": {
+    "bias": 2.961999175623574e-16,
+    "features": [
+      "distance_advantage",
+      "sustained_distance_advantage"
+    ],
+    "mean": [
+      -8.949508526111293e-16,
+      6.609307765470157e-16
+    ],
+    "scale": [
+      1.0920231745748814,
+      1.025201249350393
+    ],
+    "weights": [
+      0.6741576130705926,
+      1.3877215943371963
+    ]
+  },
+  "variant": "combined"
+}
